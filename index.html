@@ -9,6 +9,7 @@
     <title>WePool</title>
 
     <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700|Open+Sans:400,500,600" rel="stylesheet">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.css' rel='stylesheet' />
     <link href="css/style.css" rel="stylesheet">
   </head>
 
@@ -62,6 +63,10 @@
       </div>
     </div>
 
+    <div id="code-section">
+      <h1 class="code">Your Code: 431A-M</h1>
+    </div>
+
     <div id="find-section">
       <button onclick="modalone.style.display = 'block';" class="get-me">Create Pool</button>
       <button onclick="modaltwo.style.display = 'block';" class="get-me">Find Pool</button>
@@ -94,13 +99,10 @@
     <div id="create-pool">
       <div id="createblock">
         <h1 class="createtitle">Find Pool</h1>
-        <div id="map"></div>
+        <div id='map' style='width: 100%; height: 50vh; background-color: rgb(255, 255, 255);'></div>
       </div>
     </div>
 
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWkrKe9IsfFHSRQPmarqXJY4qZikeldC0&callback=initMap">
-    </script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
   </body>

@@ -80,7 +80,7 @@ body {
 }
 #current-pools {
   width: 100vw;
-  height: 76.5vh;
+  height: 71.5vh;
   background-color: rgb(247, 247, 247);
   background-color: rgb(98, 151, 254);
 }
@@ -209,10 +209,6 @@ body {
 	margin-top: 2vh;
 	margin-bottom: 2vh;
 }
-#map {
-	height: 50vh;
-	width: 100%;
-}
 
 #poolform {
 	background-color: rgb(255, 255, 255);
@@ -251,6 +247,17 @@ body {
   border-radius: 1.5vw;
 	margin-top: 3vh;
 	margin-bottom: 3vh;
+}
+#code-section {
+  margin: 0;
+  width: 100vw;
+  height: 5vh;
+  background-color: rgb(241, 241, 241);
+}
+.code {
+  padding-top: 1vh;
+  font-weight: 500;
+  font-size: 5vw;
 }
 
 .transition-all {
