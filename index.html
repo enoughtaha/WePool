@@ -8,14 +8,101 @@
 
     <title>WePool</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700|Open+Sans:400,500,600" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
-    <header>
 
-    </header>
+    <div id="header">
+      <h1 class="logo">WePool</h1>
+    </div>
 
+    <div id="user-info">
+      <h1 id="network">Location: The Masters School</h1>
+    </div>
 
+    <div id="current-pools">
+      <h1 class="set">Planned Pools</h1>
+
+      <div id="pool-info">
+        <h1 class="pool-title">"To School"</h1>
+        <h1 class="pool-time">6:30-6:50 AM</h1>
+        <button onclick="$('#rider').text('Riders: Will Stark, Natalie Lansbury');
+        $('#time').text('Time: 6:30 to 6:50 AM');
+        $('#from').text('From: Stark House');
+        $('#to').text('To: The Masters School');
+        $('#driverid').text('Driver: Natalie Lansbury');
+        $('#parent').text('Parent Approval: Confirmed');
+        modal.style.display = 'block';" class="pool-button">See Details</button>
+      </div>
+
+      <div id="pool-info">
+        <h1 class="pool-title">"Go Home"</h1>
+        <h1 class="pool-time">4:45-5:00 PM</h1>
+        <button onclick="$('#rider').text('Riders: Nina Hylton, Sabian Grier');
+        $('#time').text('Time: 4:45 to 5:00 PM');
+        $('#from').text('From: The Masters School');
+        $('#to').text('To: Hylton Household');
+        $('#driverid').text('Driver: Nina Hylton');
+        $('#parent').text('Parent Approval: Confirmed');
+        modal.style.display = 'block';" class="pool-button">See Details</button>
+      </div>
+
+      <div id="pool-info">
+        <h1 class="pool-title">"Soccer Practice"</h1>
+        <h1 class="pool-time">6:30-7:00 PM</h1>
+        <button onclick="$('#rider').text('Riders: Ahnaf Taha, Sabian Grier');
+        $('#time').text('Time: 6:30 to 7:00 PM');
+        $('#from').text('From: Taha Household');
+        $('#to').text('To: FC Westchester Field');
+        $('#driverid').text('Driver: Ahnaf Taha');
+        $('#parent').text('Parent Approval: Confirmed');
+        modal.style.display = 'block';" class="pool-button">See Details</button>
+      </div>
+    </div>
+
+    <div id="find-section">
+      <button onclick="modalone.style.display = 'block';" class="get-me">Create Pool</button>
+      <button onclick="modaltwo.style.display = 'block';" class="get-me">Find Pool</button>
+    </div>
+
+    <div id="popup" class="transition-all">
+      <div id="popbox">
+        <h1 class="poptitle">To School</h1>
+        <h1 id="rider" class="riders">Riders: Will Stark, Natalie Lansbury</h1>
+        <h1 id="time" class="riders">Time: 6:30 to 6:50 AM</h1>
+        <h1 id="from" class="riders">From: Will's House</h1>
+        <h1 id="to" class="riders">To: The Masters School</h1>
+        <h1 id="driverid" class="riders driver">Driver: Natalie Lansbury</h1>
+        <h1 id="parent" class="riders parent">Parent Approval: Confirmed</h1>
+
+        <button class="trip-button">Confirm Trip</button>
+        <button class="trip-button">Cancel Trip</button>
+      </div>
+    </div>
+
+    <div id="pop-pool">
+      <div id="popblock">
+        <h1 class="ridetitle">Create Pool</h1>
+        <div id="poolform">
+
+        </div>
+      </div>
+    </div>
+
+    <div id="create-pool">
+      <div id="createblock">
+        <h1 class="createtitle">Find Pool</h1>
+        <div id="map"></div>
+      </div>
+    </div>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWkrKe9IsfFHSRQPmarqXJY4qZikeldC0&callback=initMap">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
   </body>
 
 </html>
